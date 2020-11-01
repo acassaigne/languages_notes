@@ -38,6 +38,8 @@ npm install -g eslint
 
 ## declare setter 
 
+You have to use keyword `get` before a method name.
+
 
 ```typescript
 
