@@ -7,7 +7,36 @@ https://www.typescriptlang.org/download
 
 
 ```bash
-npm install typescript --save-dev
+npm init
+npm install --save-dev typescript tslint @types/node 
+```
+
+## config `tsconfig.json`
+
+
+https://stackoverflow.com/questions/61305578/what-typescript-configuration-produces-output-closest-to-node-js-14-capabilities
+
+```json
+{
+    "compilerOptions": {
+        "lib": ["es2020"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "strict": true,
+        "target": "es2020",
+    },
+    "include": [
+        "src"
+    ]
+}
+```
+
+## configure tsling
+
+```bash
+./node_modules/.bin/tslint --init
 ```
 
 ## Yarn
